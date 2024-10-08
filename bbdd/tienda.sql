@@ -1,7 +1,7 @@
 CREATE DATABASE tienda;
 
 USE tienda;
-CREATE TABLE jabones (
+CREATE TABLE libros (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
     descripcion TEXT,
@@ -9,14 +9,14 @@ CREATE TABLE jabones (
     stock INT NOT NULL
 );
 
-INSERT INTO jabones (nombre, descripcion, precio, stock) VALUES
-('Jabón de Lavanda', 'Jabón artesanal de lavanda', 5.99, 50),
-('Jabón de Rosas', 'Jabón suavizante de rosas', 6.49, 40),
-('Jabón de Menta', 'Jabón refrescante de menta', 5.89, 60),
-('Jabón de Avena', 'Jabón exfoliante de avena', 5.49, 35),
-('Jabón de Cítricos', 'Jabón energizante de cítricos', 6.99, 45),
-('Jabón de Caléndula', 'Jabón calmante de caléndula', 6.79, 25),
-('Jabón de Chocolate', 'Jabón nutritivo de chocolate', 7.49, 30),
-('Jabón de Café', 'Jabón rejuvenecedor de café', 7.89, 20),
-('Jabón de Almendras', 'Jabón hidratante de almendras', 6.19, 40),
-('Jabón de Karité', 'Jabón suavizante de manteca de karité', 8.49, 15);
+INSERT INTO libros (nombre, descripcion, precio, stock) VALUES
+('Las Mil y Una Rosas', 'Una historia sbre los horrores de la guerra', 5.99, 50),
+('El Vuelo del Dragón', 'Una épica aventura en un reino mágico dominado por dragones', 8.99, 100),
+('Sombras en la Neblina', 'Un thriller psicológico que explora los límites de la mente humana', 10.49, 80),
+('El Susurro de las Estrellas', 'Poemario que recoge los misterios del universo y sus secretos', 7.79, 60),
+('La Ciudad del Viento', 'Una novela distópica ambientada en una metrópolis flotante', 9.29, 50),
+('Cazadores de Sueños', 'Cuento fantástico sobre un grupo de aventureros que cazan sueños perdidos', 6.99, 75),
+('El Camino de los Ecos', 'Una historia de ciencia ficción donde el tiempo y el espacio se entrelazan', 8.49, 90),
+('La Reina de Hielo', 'Novela épica sobre una monarca que debe enfrentarse a una profecía mortal', 11.19, 30),
+('El Misterio de la Llama Eterna', 'Novela detectivesca que gira en torno a un antiguo artefacto enigmático', 9.89, 40),
+('Guardianes de la Aurora', 'Fantasía urbana donde seres míticos protegen los últimos vestigios de luz en el mundo', 7.59, 65);
